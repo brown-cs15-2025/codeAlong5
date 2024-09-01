@@ -1,4 +1,4 @@
-package codeAlong4;
+package codeAlong5;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
@@ -18,7 +18,7 @@ public class PaneOrganizer {
     this.root.setCenter(alienPane);
     HBox buttonPane = new HBox();
     this.root.setBottom(buttonPane);
-    Alien alien = new Alien(alienPane);
+    this.alien = new Alien(alienPane);
     this.setUpButtons(buttonPane);
   }
 
@@ -37,7 +37,7 @@ public class PaneOrganizer {
     b4.setOnAction((ActionEvent e) -> a.changeArrayList());
   }
 
-  public Pane getRoots() {
+  public Pane getRoot() {
     return this.root;
   }
 }
