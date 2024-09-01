@@ -29,10 +29,12 @@ public class ArrayExample {
   }
 
   public void changeArrayList() {
-    for (String word : this.coolWords){
+    for (int i = 0; i < this.coolWords.size(); i++) {
+      String word = this.coolWords.get(i);
       System.out.println(word);
       if (word.equals("Andy")) {
         this.coolWords.remove(word);
+        i--;
       }
     }
   }

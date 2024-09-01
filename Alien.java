@@ -16,10 +16,13 @@ public class Alien {
     this.rightEye = new Ellipse(0, Constants.EYE_Y, Constants.EYE_RAD_X, Constants.EYE_RAD_Y);
     this.setXLoc(Constants.START_X_OFFSET);
     root.getChildren().add(this.face);
+    root.getChildren().add(this.leftEye);
+    root.getChildren().add(this.rightEye);
   }
 
   public void moveRight() {
     this.setXLoc(this.face.getCenterX() + Constants.DISTANCE_X);
+    //help position
     System.out.println(Constants.DISTANCE_X);
   }
 
