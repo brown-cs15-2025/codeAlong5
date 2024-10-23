@@ -10,7 +10,7 @@ public class Alien {
   private Ellipse rightEye;
 
   public Alien(Pane root) {
-    this.face = new Ellipse(0, Constants.FACE_Y, Constants.FACE_RAD_X, Constants.FACE_RAD_Y);
+    this.face = Ellipse(0, Constants.FACE_Y, Constants.FACE_RAD_X, Constants.FACE_RAD_Y);
     this.face.setFill(Color.CHARTREUSE);
     this.leftEye = new Ellipse(0, Constants.EYE_Y, Constants.EYE_RAD_X, Constants.EYE_RAD_Y);
     this.rightEye = new Ellipse(0, Constants.EYE_Y, Constants.EYE_RAD_X, Constants.EYE_RAD_Y);
