@@ -18,7 +18,7 @@ public class PaneOrganizer {
     this.root.setCenter(alienPane);
     HBox buttonPane = new HBox();
     this.root.setBottom(buttonPane);
-    this.alien = new Alien(alienPane);
+    Alien alien = new Alien(alienPane);
     this.setUpButtons(buttonPane);
   }
 
@@ -37,7 +37,7 @@ public class PaneOrganizer {
     b4.setOnAction((ActionEvent e) -> a.changeArrayList());
   }
 
-  public Pane getRoot() {
+  public Pane getRoots() {
     return this.root;
   }
 }
